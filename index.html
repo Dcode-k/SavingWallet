@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Budget App</title>
+  </head>
+  <body>
+    <div class="container">
+      <p id="error_msg"></p>
+      <div class="title">
+        <h1 class="title">WALLET SAVER <i class="fa fa-money"></i></h1>
+      </div>
+      </div>
+
+      <div>
+      <!-- <div class="exchange"> -->
+        <div id="budgethead" class ="exchange">
+          <h4>Budget</h4>
+          <p class="income" id="income">&#8377;0.00</p>
+        </div>
+        <div id = "expensehead" class ="exchange">
+          <h4>Expense</h4>
+          <p class="expense" id="expense">&#8377;0.00</p>
+        </div>
+        <div id="balancehead" class ="exchange">
+          <h4>Balance</h4>
+          <p id="balance">&#8377;0.00</p>
+        </div>
+      </div>
+    </div>
+
+      <h3>Entry</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Description</label>
+          <input type="text" id="text" onfocus="this.value=''" placeholder="Enter text...">
+          <div><img src="https://static.thenounproject.com/png/2313-200.png" onclick="voiceO('text')" width = "30px">
+          </div>
+        </div>
+        <div class="form-control">
+          <label for="amount">Amount <br /> </label>
+          <input type="number" id="amount" onfocus="this.value=''" placeholder="Enter value...">
+          <div><img src="https://static.thenounproject.com/png/2313-200.png" onclick="voiceO('text')" width = "30px">
+          </div>
+        </div>
+        <button class="btn">Add Entry</button>
+      </form>
+      <br>
+      <section><img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY_LuYPAAdLu73w-8TP8xaNUqYTe8ejGb1FA&usqp=CAU"  width ="30px">;
+        <ul id="list" class="list"></ul>
+</section>
+    <script src="main.js"></script>
+  </body>
+</html>
